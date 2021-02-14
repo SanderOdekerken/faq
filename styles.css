@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to right,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+h1 {
+  margin-bottom: 40px;
+}
+h1 h2 {
+  color: hsl(238, 29%, 16%);
+}
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+p {
+  display: none;
+}
+hr {
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid hsl(240, 5%, 91%);
+}
+
+h2:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+.card {
+  height: 380px;
+  width: 700px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* IMAGES */
+.images {
+  margin-left: -130px;
+  margin-top: 10px;
+  display: inline-block;
+  height: 400px;
+  width: 300px;
+  position: relative;
+}
+.img1 {
+  margin-top: -180px;
+  margin-left: -225px;
+  height: 600px;
+  position: absolute;
+}
+.img2 {
+  margin-top: 40px;
+  margin-left: 60px;
+  height: 250px;
+  position: absolute;
+}
+.img3 {
+  height: 120px;
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 60px;
+}
+
+/* FAQ */
+.faq-card {
+  display: inline-block;
+  margin-left: 130px;
+  margin-top: 40px;
+  position: absolute;
+  height: 500px;
+  width: 350px;
+}
+.arrow-key {
+  float: right;
+}
