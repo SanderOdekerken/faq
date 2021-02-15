@@ -2,15 +2,18 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(
-    to right,
+    180deg,
     hsl(273, 75%, 66%),
     hsl(240, 73%, 65%)
   );
+  background-repeat: no-repeat;
+    background-attachment: fixed;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
 }
 h1 {
   margin-bottom: 40px;
+  font-weight: bolder;
 }
 h1 h2 {
   color: hsl(238, 29%, 16%);
@@ -21,6 +24,7 @@ h2 {
 }
 p {
   display: none;
+  color: grey;
 }
 hr {
   margin-bottom: 0;
@@ -38,10 +42,17 @@ h2:hover {
   margin: 100px auto;
   background-color: white;
   border-radius: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* IMAGES */
+.xtr-img{
+  margin-left: 130px;
+  width: 300px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+}
 .images {
   margin-left: -130px;
   margin-top: 10px;
@@ -52,13 +63,13 @@ h2:hover {
 }
 .img1 {
   margin-top: -180px;
-  margin-left: -225px;
+  margin-left: -350px;
   height: 600px;
   position: absolute;
 }
 .img2 {
   margin-top: 40px;
-  margin-left: 60px;
+  margin-left: -60px;
   height: 250px;
   position: absolute;
 }
@@ -67,6 +78,7 @@ h2:hover {
   position: absolute;
   margin-top: 140px;
   margin-left: 60px;
+
 }
 
 /* FAQ */
@@ -80,4 +92,80 @@ h2:hover {
 }
 .arrow-key {
   float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  h1 {
+    margin-bottom: 38px;
+    text-align: center;
+  }
+  hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+  }
+  .card {
+    height: 500px;
+    width: 320px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: visible;
+  }
+
+  /* IMAGES */
+  .xtr-img{
+    margin-left: 0;
+    width: 0;
+      height: 0;
+      position: absolute;
+      overflow: visible;
+  }
+  .images {
+    height: 110px;
+    width: 300px;
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+  .img1 {
+    margin-top: -130px;
+    margin-left: 45px;
+    height: 220px;
+    position: absolute;
+  }
+  .pattern{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+  }
+  .img2 {
+    margin-top: -97px;
+    margin-left: 55px;
+    height: 160px;
+    position: absolute;
+  }
+  .img3 {
+    height: 80px;
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 50px;
+  }
+
+  /* FAQ */
+  .faq-card {
+    height: 500px;
+    width: 280px;
+    margin: 0;
+    display: block;
+    position: relative;
+    margin: auto;
+  }
+
+  .arrow-key {
+    float: right;
+  }
+  
 }
